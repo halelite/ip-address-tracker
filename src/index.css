@@ -1,0 +1,86 @@
+@import "tailwindcss";
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+@layer base {
+	html {
+		@apply h-full w-full font-rubik;
+	}
+}
+
+@theme {
+	--font-rubik: "Rubik", "sans-serif";
+
+	--color-dark-gray-1: hsl(0, 0%, 17%);
+	--color-dark-gray-2: hsl(0, 0%, 59%);
+	--color-footer-blue: hsl(228, 45%, 44%);
+
+	--spacing-2: 2px;
+	--spacing-4: 4px;
+	--spacing-6: 6px;
+	--spacing-8: 8px;
+	--spacing-10: 10px;
+	--spacing-12: 12px;
+	--spacing-16: 16px;
+	--spacing-18: 18px;
+	--spacing-20: 20px;
+	--spacing-24: 24px;
+	--spacing-26: 26px;
+	--spacing-32: 32px;
+	--spacing-36: 36px;
+	--spacing-40: 40px;
+	--spacing-46: 46px;
+	--spacing-52: 52px;
+	--spacing-56: 56px;
+
+	--text-8: 8px;
+	--text-9: 9px;
+	--text-10: 10px;
+	--text-11: 11px;
+	--text-12: 12px;
+	--text-14: 14px;
+	--text-16: 16px;
+	--text-18: 18px;
+	--text-h1: 1.6rem;
+	--text-h2: 20px;
+	--text-h2--font-weight: 500;
+	--text-caption: 8px;
+	--text-caption--font-weight: 700;
+	--text-bodyLg: 18px;
+	--text-bodyLg--font-weight: 500;
+
+	--tracking-2: 1.5px;
+
+	--radius-2: 2px;
+	--radius-4: 4px;
+	--radius-8: 8px;
+	--radius-10: 10px;
+}
+
+.header {
+	@apply bg-[url(/images/pattern-bg-mobile.png)] bg-no-repeat bg-cover text-center p-20 min-h-[38vh] md:min-h-[29vh] md:bg-[url(/images/pattern-bg-desktop.png)];
+}
+
+.center {
+	@apply flex items-center justify-center;
+}
+
+.attribution {
+	font-size: 9px;
+	text-align: center;
+	position: absolute;
+	bottom: 0;
+	z-index: 50;
+	left: 50%;
+	transform: translateX(-50%);
+	background: rgba(255, 255, 255, 0.8);
+	padding: 1px 3px;
+}
+
+.attribution a {
+	color: hsl(228, 45%, 44%);
+}
